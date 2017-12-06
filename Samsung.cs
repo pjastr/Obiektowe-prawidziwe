@@ -10,19 +10,26 @@ namespace Cw8_6
     {
         private bool czyDualSim;
 
-        public bool CzyDualSim
+        public bool CzyDualSim //poprawki
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get { return czyDualSim; }
+            set { czyDualSim = value; }
         }
         
-        public void WlaczWiFi();
-        public void ZrobZdjecie();
-        public void ZrobZdjecie(string trybKamery);
+        //znów brak wnętrza do metod
+        public void WlaczWiFi()
+        {
+            Console.WriteLine("Wifi on");
+        }
+
+        public void ZrobZdjecie()
+        {
+            Console.WriteLine("Wykonano zdjęcie");
+        }
+
+        public void ZrobZdjecie(string trybKamery)
+        {
+            Console.WriteLine("Wykonano zdjęcie, tryb: {0}", trybKamery);
+        }
     }
 }
