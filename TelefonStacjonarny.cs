@@ -10,12 +10,28 @@ namespace Cw8_6
     {
         private int numer;
 
-        public int GetNumer();
-        public void OdbierzPolaczenie();
-        public void SetNumer(int numer);
-        public void WykonajPolaczenie();
+        //znów brak wnętrz
+        public int GetNumer()
+        {
+            return numer;
+        }
 
-        TelefonStacjonarny(string numer)
+        public void OdbierzPolaczenie()
+        {
+            Console.WriteLine("odbieram polaczenie");
+        }
+
+        public void SetNumer(int numer)
+        {
+            this.numer = numer;
+        }
+
+        public void WykonajPolaczenie()
+        {
+            Console.WriteLine("Dzwonie....");
+        }
+
+        public TelefonStacjonarny(string numer) //<= brak modyfikator dostepu
         {
             this.numer = Convert.ToInt32(numer);
         }
