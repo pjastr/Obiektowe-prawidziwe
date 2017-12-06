@@ -16,7 +16,7 @@ namespace Cw8_6
         int PamiecWewnetrzna
         {
             get;
-            set;
+            //set; <- tego nie ma na diagramie
         }
 
         void WyslijSMS();
