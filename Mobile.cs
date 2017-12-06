@@ -13,38 +13,47 @@ namespace Cw8_6
         private int pamiecWewnetrzna;
         private string procesor;
 
-        public string KartaSim
+        public string KartaSim //poprawki
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get {return kartaSim;}
+            set {kartaSim = value;}
         }
 
-        public int PamiecWewnetrzna
+        public int PamiecWewnetrzna //poprawki
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get {return pamiecWewnetrzna;}
         }
 
         public string Procesor
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get { return procesor; }
+        }
+        
+        //brak wnętrza do kolejnych metod
+        public void OdbierzPolaczenie()  
+        {
+            Console.WriteLine("Odbieram połączenie");
         }
 
-        public void Odbierz();
-        public void PobierzNumer();
-        public void WykonajPolaczenie();
-        public void WyslijSMS();
-        public void ZrobZdjecie();
+        public void PobierzNumerIMEI()
+        {
+            Console.WriteLine("Imei: {0}", numerIMEI);
+        }
+
+        public void WykonajPolaczenie()
+        {
+            Console.WriteLine("Dzwonie");
+        }
+
+        public void WyslijSMS()
+        {
+            Console.WriteLine("Wysyłam sms");
+        }
+
+        public void ZrobZdjecie()
+        {
+            Console.WriteLine("Pstryk!");
+        }
 
     }
 }

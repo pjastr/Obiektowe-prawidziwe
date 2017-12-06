@@ -8,7 +8,7 @@ namespace Cw8_6
 {
     interface ITelefon
     {
-        void OdbierzPoloczenie();
-        void WykonajPoloczenie();
+        void OdbierzPolaczenie(); //lit.
+        void WykonajPolaczenie(); //lit.
     }
 }
