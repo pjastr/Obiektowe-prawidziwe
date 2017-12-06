@@ -8,6 +8,10 @@ namespace Cw8_6
 {
     class SamsungS5 : Samsung
     {
-        public void PodlaczZegarek();
+        //znów brak wnętrza
+        public void PodlaczZegarek()
+        {
+            Console.WriteLine("podłączono zegarek");
+        }
     }
 }
