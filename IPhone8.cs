@@ -8,6 +8,10 @@ namespace Cw8_6
 {
     class IPhone8 : IPhone
     {
-        public void NagrywanieHD();
+        //brak wnętrza
+        public void NagrywanieHD()
+        {
+            Console.WriteLine("Hd");
+        }
     }
 }
